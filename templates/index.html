@@ -1,0 +1,551 @@
+{% extends 'base.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trade Day </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+</head>
+{% block content %}
+
+<body style="margin-top: -3%;">
+	<nav class="navbar navbar-inverse"  style="background: #000;">
+  		<div class="container-fluid">
+    	<div class="navbar-header" style="margin-bottom: -10%;">
+      		<img class="img-responsive" src="{% static 'assets/images/logo-head.png' %}" alt="logo" width="15%" height="auto" />
+    	</div>
+    	<ul class="nav navbar-nav navbar-right">
+      		<li><a class="btn btn-link" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+      		<li class="separator" style="color: white;margin-top: 15px;">/</li>
+      		<li><a class="btn btn-link" data-toggle="modal" data-target="#myModal1">Register</a></li>
+    	</ul>
+  		</div>
+	</nav>
+  <!-- login -->
+  <!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background-image: linear-gradient(to right, #0058b1 , #010204);padding: 50px;color: #fff;border-radius: 5px;width: 80%;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" style="color: #fff;position: static;top: 0;right: 0;display: inline-block;margin-bottom: 0;font-size: 30px;line-height: 30px;text-align: right;cursor: pointer;">&times;</button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+       <form method="post" action="/login" >
+          {% csrf_token %}
+      <div class="modal-body">
+      <label for="username">User Name</label>
+    <input type="text" class="form-control" id="loginusername" name="loginusername" placeholder="Choose a username">
+      </div>
+      <div class="modal-body">
+            <label for="pass">Enter your password</label>
+   <input type="password" class="form-control" id="loginpass" name="loginpass" placeholder="Enter your password">
+      </div>
+      <div class="modal-footer">
+         <button type="submit" class="btn btn-primary" role="button"  style="float: left;">Login</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end login -->
+<!-- register -->
+  <!-- login -->
+  <!-- Modal -->
+<div id="myModal1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background-image: linear-gradient(to right, #0058b1 , #010204);padding: 50px;color: #fff;border-radius: 5px;width: 80%;">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" style="color: #fff;position: static;top: 0;right: 0;display: inline-block;margin-bottom: 0;font-size: 30px;line-height: 30px;text-align: right;cursor: pointer;">&times;</button>
+        <h4 class="modal-title">Register</h4>
+      </div>
+      <form method="post" action="/signup" >
+          {% csrf_token %}
+      <div class="modal-body">
+      <label for="username">User Name</label>
+    <input type="text" class="form-control" id="username" name="username" placeholder="Lowercase and Alphanumeric" required>
+      </div>
+      <div class="modal-body">
+      <label for="email">Email</label>
+   <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+      </div>
+      <div class="modal-body">
+      <label for="pass1">Choose a Password</label>
+   <input type="password" class="form-control" id="pass1" name="password" placeholder="choose your password" required>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-primary" role="button"  style="float: left;">Register</button>
+        
+ 
+        </form>
+        <label>
+        <input type="checkbox" checked="checked" name="remember">I Agree to Trade Day 's Terms of Use
+      </label>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- end register -->
+	<div class="container-fluid banner_section" style="margin-top: -2%;background-image: linear-gradient(to right, #0058b1 , #010204);    padding-bottom: 0%;">
+		<div class="row">
+      <div class="text-justify-center text-uppercase" id="banner">
+        <h1 class="text-center">buy flx now and get 100 fee share !
+        </h1>
+        <h1 class="text-center">register now to buy flx</h1>
+      </div> 
+      <div class="col-sm-4 col-md-4" id="banner-text1">
+        <h1>Time to get your investments to the next level!</h1>
+        <h5 class="text-uppercase">Trade Day  - future of tranding</h5>
+      </div> 
+      <div class="col-sm-4 col-md-4" style="margin-right: -5%;">
+        <img src="{% static 'images/logo.png' %}" style="width: 100%;">
+      </div> 
+      <div class="col-sm-4">
+        <img src="{% static 'images/banner.png' %}">
+      </div>
+			<div class="col-md-4 col-sm-4" id="btn_style" style="    margin-top: 3%;margin-left: 40%;">
+				<ul>
+				<li><a href="#" class="btn btn-primary btn-lg" role="button" style="padding: 10px 40px 0 40px;">START NOW</a></li>
+				<li><a href="#" class="btn btn-primary btn-lg" role="button">VIEW DEMO VIDEO</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+<div class="content-area container">
+  <div class="table-area table-bordered table-responsive" style="margin-bottom: 4%;
+  border: 2px solid #10104a;font-weight: bold;">
+    <table class="table">
+      <thead  style="color: white;">
+        <tr id="table-head">
+          <th>PAIR</th>
+          <th>COIN</th>
+          <th>LAST PRICE</th>
+          <th>24H CHANGE</th>
+          <th>24H HIGH</th>
+          <th>24H LOW</th>
+          <th>24H VOLUME</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>BHV/BTC</td>
+          <td>BeeHive</td>
+          <td>0.00000004</td>
+          <td style="color:#78b991">0.00% </td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>TN/BTC</td>
+          <td>Turtle Network</td>
+          <td>0.00000002</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>XSN/BTC</td>
+          <td>Stakenet</td>
+          <td>0.0000201</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>ZEN/BTC</td>
+          <td>Horizen</td>
+          <td>0.000422</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>WGR/BTC</td>
+          <td>Wagerr</td>
+          <td>0.0000046</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>NEBL/BTC</td>
+          <td>Neblio</td>
+          <td>0.00028</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>        
+        <tr>
+          <td>MOD/BTC</td>
+          <td>Modum</td>
+          <td>0.000887</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>ETH/BTC</td>
+          <td>Ethereum</td>
+          <td>0.0343</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>DASH/BTC</td>
+          <td>Dash</td>
+          <td>0</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>FLX/BTC</td>
+          <td>Trade Day Coin</td>
+          <td>0.0000175</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>BTC/BTC</td>
+          <td>Bitcoin</td>
+          <td>1</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>HN/BTC</td>
+          <td>Hellenic Node</td>
+          <td>0.0000002</td>
+          <td style="color:#78b991">0.00%</td>
+          <td>0</td>
+          <td>0</td>
+          <td>0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- END SECTION HOW IT WORK -->
+<!-- START SECTION ABOUT US -->
+<section id="about" style="background: black">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-6 col-sm-12" style="font-size: larger;">
+        <div class="title_light"> 
+          <p>Token Name: Trade Day coin <br>
+          Short Name: FLX <br>
+		  Waves-ID:C8da4DbsXPcBqqGK8indGFNJFhhv3K25r4JjnXmFTW3Z <br>
+		  Token Type: Security Smart Contract
+		  </p>
+		  <br>
+		  <p>Why to buy FLX Security Token?</p>
+		  <h2 style="color:#f4a773">100% Profit Shares</h2>
+		  <p>100% of generated trading fees will be rewarded back to all Shareholders in the form of Coins in which volume has been generated</p>
+		  <p>
+		  	-Unique crypto distribution model <br>
+			-Gamble with FLX <br>
+			-Pay half of Fees with FLX <br>
+			-Earn passive income - just multiply your coins <br>
+			-Prevent Crime & Money Laundering <br>
+			-  o To transfer FLX on Blockchain approved KYC/AML is required
+		</p>
+		<p>Be a shareholder of a unique Crypto Exchange and participate on its success!</p>
+        </div>
+    	</div>
+      <div class="col-lg-6 col-md-6 col-sm-12" style="border-radius: 25px;"> 
+        	<img src="{% static 'images/profit_share.png' %}"/ style="width: 100%;margin-top:-100px;"> 
+        	<!-- <img src="images/4.png" style="width: 75%;margin-left: 15%;"> -->
+      </div>
+    </div>
+  </div><!-- 
+  <div class="rounded_shape light_rounded_shape3"></div>
+  <div class="rounded_shape light_rounded_shape5"></div> -->
+</section>
+<!-- END SECTION ABOUT US --> 
+<div class="content-area container-fluid" style="background: #e6e6e6;">
+  <div class="table-area table-bordered" style="margin-bottom: 3%;font-weight: bold;margin-left: 10%;margin-right: 10%;">
+    <table class="table-responsive table">
+      <tbody>
+        <tr>
+          <td>FLX Supply:</td>
+          <td>75.000.000</td>
+        </tr>
+        <tr>
+          <td>Token For Sale:</td>
+          <td>50%</td>
+        </tr>
+        <tr>
+          <td>Early Investor Program (SAFT):</td>
+          <td>$0,06</td>
+        </tr>
+        <tr>
+          <td>SAFT min. Investment SAFT:</td>
+          <td>$1.000</td>
+        </tr>
+        <tr>
+          <td>Initial Exchange Offering Price/Token:</td>
+          <td>$0,10</td>
+        </tr>
+        <tr>
+          <td>Accepting Currency For SAFT:</td>
+          <td>BTC,ETH,TUSD</td>
+        </tr>
+        <tr>
+          <td>Hard Cap:</td>
+          <td>$3.600.000</td>
+        </tr>
+        <tr>
+          <td>SAFT-Sale completed:</td>
+          <td>$50.000</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!-- Chart Section Work -->
+<div class="container-fluid" id="chart">
+  <div class="row" id="chart1">
+  <div class="col-sm-6">
+    <h3 class="text-uppercase" style="color: #fff;text-align: center;">Distribution</h3>
+    <img src="{% static 'images/18.png' %}" style="margin-left: 11%; width: 75%;">
+  </div>
+  <div class="col-sm-6">
+    <h3 class="text-uppercase" style="color: #fff;text-align: center;">intended use of token sale revenue</h3>
+    <img src="{% static 'images/19.png' %}" style="margin-left: 11%; width: 75%;">
+  </div>
+  </div>
+    <div class="row">
+    <div class="col-md-8" style="margin-left: 10%;margin-right: 10%;">
+    <h3 style="color: #075bb3">SAFT Program:</h3>
+    <h4>The SAFT (Simple Agreement for Future Tokens) will be distributed with a discount of 40%.</h4>
+    <h3 style="color: #075bb3">STO Program:</h3>
+    <h4>Will start with Exchange launch at March 15th,2019 and will be sold over the Orderbook.</h4>
+    </div>
+  </div>
+</div>
+<div class="graph-container table-responsive" style="background: #000;padding-left: 10%;">
+	<h1 style="text-align: center;color:#fff;">Point- System</h1>
+  <div class="graph-titles">
+   <!-- Populated -->
+  </div>
+	<div class="graph">
+   
+    <div class="graph-bars">
+      <!-- Populated -->
+    </div>
+  
+    <div class="markers">
+    <!-- Populated -->
+    </div>
+  </div>
+  <div class="graph-key">
+    <div class="graph-key-item">
+      <span class="graph-key-dot newFromBatch"></span><span>Trading Volume (BYC x 1000)</span>
+    </div>
+    <div class="graph-key-item">
+      <span class="graph-key-dot newCount"></span><span>Gamble Games (1.1)</span>
+    </div>
+    <div class="graph-key-item">
+      <span class="graph-key-dot active"></span><span>FLX Tokens (x).1)</span>
+    </div>
+<!--     <div class="graph-key-item">
+      <span class="graph-key-dot "></span><span>New From Batch</span>
+    </div> -->
+  </div>
+</div>
+<!-- point system end -->
+<div class="container" style="margin-bottom: 5%;">
+	<div class="row">
+		<div class="col-lg-12">
+			<h3 style="color: #075bb3">Why Security? - The Reward-System:</h3>
+			<h4>There will be 4 leagues with 100 user each in which the best traders, gamblers and shareholders can compete.*</h4>
+			<h4>A points system (see below) will be used to determine who can hold their own against their fellow players and can thus be crowned "Champion of Flex".<br>
+			Within the leagues it is possible to ascend and descend.</h4>
+			<h3 style="color: #075bb3">Benefits for Shareholders:</h3>
+			<h4>Due to  the 100% Reward of all Coins with generated volume, there is no need to get into one of the coveted leagues. Because it is distributed to all FLX shareholders!</h4>
+			<h4>if you don't reach the league, you will be rewarded proportionately for your FLX!</h4>
+			<h3 style="color: #075bb3">Offline-Staking</h3>
+			<h4>It will be possible to transfer the FLX tokens into your own wallet and still participate to the rewards system! Only register your wallet address on the exchange and countinue to the rewards system! Rewards are then credited to the account on the exchange.</h4>
+			<h3 style="color: #075bb3">When will the Reward be available?</h3>
+			<h4>Every Sunday at 12:00pm UTC the Reward will be distributed.<br>This will cause users to ascend and descend in the league and the collected points of all users will be reset. (A new season starts)</h4>
+			<h3 style="color: #075bb3">Trade Day  Gamble:</h3>
+			<h4>on "Trade Day  Gamble" you can take a seat at a virtual roultte table and bet and win with FLX.</h4>
+			<h3 style="color: #075bb3">How to get FLX after STO?</h3>
+			<h4>FLX will be freely tradeable on Trade Day .io</h4>
+		</div>
+	</div>
+</div>
+<!-- Coin section -->
+<div class="container-fluid" style="background: black;color: white;">
+  <div class="row" style="text-align: center;margin-bottom: 10px;">
+    <h1 style="font-size: 100px;font-weight: bold;">COINS</h1>
+    <h2>With the launch of Trade Day  these coins will be tradable.</h2>
+  </div>
+  <div class="row" style="margin-bottom: 5%;margin-left: 2%;">
+    <div class="col-sm-3">
+      <img src="{% static 'images/5.png' %}" style=" border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-3">
+      <img src="{% static 'images/6.png' %}" style=" border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-3">
+      <img src="{% static 'images/7.png' %}" style=" border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-3">
+      <img src="{% static 'images/8.png' %}" style=" border: 10px solid gray;border-radius: 10px;">
+    </div>
+  </div>
+  <div class="row" style="margin-bottom: 5%;margin-left: 2%;">
+    <div class="col-sm-3">
+      <img src="{% static 'images/9.png' %}" style=" border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-3">
+      <img src="{% static 'images/10.png' %}" style="border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-3">
+      <img src="{% static 'images/11.png' %}" style="border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-3">
+      <img src="{% static 'images/12.png' %}" style="border: 10px solid gray;border-radius: 10px;">
+    </div>
+  </div>
+  <div class="row" style="margin-bottom: 5%;
+    margin-left: 10%;margin-right: 10%;">
+    <div class="col-sm-4">
+      <img src="{% static 'images/13.png' %}" style="border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-4">
+      <img src="{% static 'images/14.png' %}" style="border: 10px solid gray;border-radius: 10px;">
+    </div>
+    <div class="col-sm-4">
+      <img src="{% static 'images/15.png' %}" style="border: 10px solid gray;border-radius: 10px;">
+    </div>
+  </div>
+</div>
+<!-- end Coin section -->
+<!-- features section -->
+<div class="container-fluid" style="background-image: linear-gradient(#014083 0%, #000 30%, #000 90%);padding-top: 1%;
+    padding-bottom: 6%;">
+	<div class="row">
+		<h2 class="text-uppercase" style="text-align: center;color: white;">features</h2>
+	</div>
+	<div class="row" style="background: #343434;margin-left: 10%;
+	margin-right: 10%;border-radius: 10px;text-align: center;margin-top: 30px;">
+		<div class="col-sm-3" style="color:#fff;">
+			<h2 style="font-weight: bold;">Gambling</h2>
+			<h4>We provide American Roulette for our User. Here you can experience real Gambling feeling with crypto combined</h4>
+		</div>
+		<div class="col-sm-3" style="color:#fff;border-right:10px solid gray;    border-left: 10px solid gray;">
+			<h2 style="font-weight: bold;">FLX-Token</h2>
+			<h4>Trade Day coin, our own security Token. The Coin is combined with full KYC/AML, for maximum security and also offers a participation of success of the exchange for every tokenholder!</h4>
+		</div>
+		<div class="col-sm-3" style="color:#fff;">
+			<h2 style="font-weight: bold;">Pooling</h2>
+			<h4>With our pool we offer the possibility that our customers can participate in different master nodes with small investments to increase their Investments.</h4>
+		</div>
+		<div class="col-sm-3" style="color:#fff;border-left: 10px solid gray;">
+			<h2 style="font-weight: bold;">Reward</h2>
+			<h4>A points system for all users brings the best in a league system, in addition, all users who hold the FLX token will be rewarded in these shares even if they have not made it into one of the coveted leagues!</h4>
+		</div>						
+	</div>
+</div>
+<!-- end features section -->
+<!-- our partners -->
+<div class="container-fluid" style="background-image: linear-gradient(to right, #336bbe , #fff);">
+	<div class="row" style="text-align: center;">
+		<h1 class="text-uppercase" style="color: #000;font-weight: bold;    margin-bottom: -5%;">Our Partners</h1>
+		<img src="images/our partner.png">
+	</div>
+</div>
+<!-- end our partners -->
+<!-- Footer -->
+<footer class="container-fluid" style="background: #000;">
+	<div class="row">
+		<div class="col-sm-4">
+		<img src="{% static 'images/footer.png' %}" style="width:70%;margin-left:10%;">
+		</div>
+		<div class="col-sm-8" style="margin-top: 5%;">
+			<p style="border-bottom: 1px solid #fff; color: #fff;">Folder The Future of Tranding</p>
+		</div>
+		<!-- <hr style="color: #fff;"> -->
+      	<div class="col-sm-2">
+        <!-- Content -->
+        <p style="color: #fff;">legal</p>
+        <p style="color: #fff;text-decoration: underline;">Legal Information</p>
+        <p style="color: #fff;text-decoration: underline;">Privacy Policy</p>
+        <p style="color: #fff;text-decoration: underline;">Terms & Conditions</p>
+      	</div>
+      	<div class="col-sm-2">
+        <!-- Content -->
+        <p style="color: #fff;">Info</p>
+        <p style="color: #fff;text-decoration: underline;">Fees</p>
+        <p style="color: #fff;text-decoration: underline;">License</p>
+      	</div>
+      	<div class="col-sm-1">
+        <!-- Content -->
+        <p style="color: #fff;">Menu</p>
+        <p style="color: #fff;text-decoration: underline;">Trade Day </p>
+        <p style="color: #fff;text-decoration: underline;">support</p>
+      	</div>
+      	<div class="col-sm-1">
+        <!-- Content -->
+        <p style="color: #fff;">Social</p>
+        <ul>
+        	<li><i class="fa fa-facebook-f"></i></li>
+        	<li><i class="fa fa-twitter"></i></li>
+        	<li><i class="fa fa-instagram"></i></li>
+        	<li><i class="fa fa-telegram"></i></li>
+        </ul>
+      	</div>
+      	<div class="col-sm-1">
+        <!-- Content -->
+        <button class="btn-lg btn-primary">subscribe</button>
+      	</div>
+		<div class="col-sm-8" style="margin-top: 5%;">
+			<p style="color: #fff;">Trade Day  2019, All Rights Reserved.</p>
+		</div>      	
+	</div>
+</footer>
+<!-- End Footer -->
+{% endblock content %}
+</body>
+</html>
+
+
+
+{% block js %}
+<script>
+{% if thank %}
+alert('Thanks FOR contacting us.We will get back soon!');
+
+document.location = "/";
+
+
+
+{% endif %}
+
+
+</script>
+{% endblock %}

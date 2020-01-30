@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trade Day</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style1.css">
+    <link rel='stylesheet' href='bootstrap-3.3.7-dist\css\bootstrap.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link id="layoutstyle" rel="stylesheet" href="assets/color/theme.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist\css\bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="bootstrap-3.4.1-dist\js\bootstrap.min.js"></script>
+<style>
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 54px;
+  left: 50px;
+  background-image: linear-gradient(to right, #0058b1 , #010204);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 21px;
+}
+
+.sidenav a {
+  padding: 11px 5px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 767px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  footer{text-align: center;}
+  .container{width: 80%;max-width: 80%;}
+}
+/*sid navbar*/
+.left-menu[data-v-39b1fc22] {
+    z-index: 2;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    }
+.left-menu, .logo-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50px;
+  }
+.left-menu {
+    bottom: 0;
+    z-index: 1;
+    display: block;
+    height: 100vh;
+    padding-top: 75px;
+    background-color: #004c9a;
+}
+.active-menu-item {
+    background-color: #337ab7;
+}
+.menu-item-left {
+    position: static;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50px;
+    max-width: none;
+    padding: 10px 5px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+    text-decoration: none;
+}
+</style>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "155px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</head>
+<body style="margin-top: -3%;">
+  <nav class="navbar navbar-default" role="navigation" style="background: #000;    position: fixed;z-index: 100;">
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header" style="width: 100%">
+      <a class="navbar-brand" href="#"><img class="img-responsive"src="assets/images/logo-head.png" alt="logo" style="width:100px;" /></a>
+        <ul class="nav navbar-nav navbar-right" style="padding-left: 80%">
+          <li class="dropdown">
+            <i type="button" class="fa fa-cog dropdown-toggle" data-toggle="dropdown" style="font-size: 25px;"></i>
+            <ul class="dropdown-menu">
+              <li><a href="edit_profile.html">Edit Profile</a></li>
+              <li><a href="verification.html">Verification</a></li>
+              <li><a href="security.html">Security</a></li>
+            </ul>
+          </li>
+            <a href="#" style="padding-right: 20px"><span><img src="images/user.png"  width="25">Name</span>
+            </a>
+        </ul>
+    </div>
+    </div>
+  </nav>
+<!-- Side bar -->
+<nav class="main-menu">
+  <ul>
+    <li>
+      <a href="home.html">
+        <img src="images/a.png" style="margin-left: 15px; margin-right: 20px;">
+        <span class="nav-text">
+        Home
+        </span>
+      </a>
+    </li>
+    <li class="has-subnav">
+      <a href="trading.html">
+        <img src="images/b.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+          Trading
+          </span>
+      </a>           
+    </li>
+    <li class="has-subnav">
+      <a href="wallets.html">
+        <img src="images/c.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+          Wallets
+          </span>
+      </a>
+    </li>
+    <li class="has-subnav">
+      <a href="balances.html">
+        <img src="images/d.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+          Balances
+          </span>
+      </a>
+    </li>
+    <li>
+      <a href="profit.html">
+        <img src="images/e.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+          Profits
+          </span>
+      </a>
+    </li>
+    <li>
+      <a href="pooling.html">
+        <img src="images/f.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+          Pooling
+          </span>
+      </a>
+    </li>
+    <li>
+      <a href="trade_history.html">
+        <img src="images/g.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+            Trade History
+          </span>
+      </a>
+    </li>
+    <li>
+      <a href="index.html">
+        <img src="images/i.png" style="margin-left: 15px; margin-right: 20px;">
+          <span class="nav-text">
+          Logout
+          </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!-- End Navigation Bar -->
+<div class="container" style="margin-left: 15%;margin-top: 5%;">
+  <div class="row">
+    <div class="col-sm-4 col-md-4" style="border: 1px solid #ddd;
+    border-radius: 8px;margin-bottom: 2%;padding-top: 10px;
+    padding-bottom: 5px;margin-left: 35%;">
+      <input type="text" placeholder="Search..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3" style="border: 1px solid #ddd;
+    border-radius: 15px;margin-bottom: 2%;margin-left: 35%;">
+      <button style="background:#fff;">Download CSV file</button>
+    </div>
+    <div class="col-sm-2">
+        <button type="button" class="btn-primary btn-sm">
+          <span class="glyphicon glyphicon-refresh"></span>
+        </button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 col-sm-8" style="border: 1px solid #ddd;margin-bottom: 2%;">
+      <h2 style="text-align: center;
+        font-weight: bold;">Trading History</h2>
+    <div class="table-area table-bordered table-responsive" style="margin-bottom: 10%;font-weight: bold;">
+      <table class="table">
+        <thead  style="color: white;">
+          <tr style="background: #000;">
+            <th>DATE</th>
+            <th>COIN</th>
+            <th>TYPE</th>
+            <th>PRICE</th>
+            <th>AMOUNT</th>
+            <th>FEE</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+      </table>
+      </div>
+      <label style="margin-left: 45%;">No history</label>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="container-fluid" style="background: #000;margin-left:50px;">
+  <div class="row">
+    <div class="col-sm-4">
+    <img src="images/footer.png" style="width:70%;margin-left:10%">
+    </div>
+    <div class="col-sm-8" style="margin-top: 5%;">
+      <p style="border-bottom: 1px solid #fff; color: #fff;">Folder The Future of Tranding</p>
+    </div>
+    <!-- <hr style="color: #fff;"> -->
+        <div class="col-sm-2">
+        <!-- Content -->
+        <p style="color: #fff;">legal</p>
+        <p style="color: #fff;text-decoration: underline;">Legal Information</p>
+        <p style="color: #fff;text-decoration: underline;">Privacy Policy</p>
+        <p style="color: #fff;text-decoration: underline;">Terms & Conditions</p>
+        </div>
+        <div class="col-sm-2">
+        <!-- Content -->
+        <p style="color: #fff;">Info</p>
+        <p style="color: #fff;text-decoration: underline;">Fees</p>
+        <p style="color: #fff;text-decoration: underline;">License</p>
+        </div>
+        <div class="col-sm-1">
+        <!-- Content -->
+        <p style="color: #fff;">Menu</p>
+        <p style="color: #fff;text-decoration: underline;">Trade Day</p>
+        <p style="color: #fff;text-decoration: underline;">support</p>
+        </div>
+        <div class="col-sm-1">
+        <!-- Content -->
+        <p style="color: #fff;">Social</p>
+        <ul>
+          <li><i class="fa fa-facebook-f"></i></li>
+          <li><i class="fa fa-twitter"></i></li>
+          <li><i class="fa fa-instagram"></i></li>
+          <li><i class="fa fa-telegram"></i></li>
+        </ul>
+        </div>
+        <div class="col-sm-1">
+        <!-- Content -->
+        <button class="btn-lg btn-primary">subscribe</button>
+        </div>
+    <div class="col-sm-8" style="margin-top: 5%;">
+      <p style="color: #fff;">Trade Day 2019, All Rights Reserved.</p>
+    </div>        
+  </div>
+</footer>
+<!-- End Footer -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script  src="js/script.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script  src="js/index.js"></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+
+</body>
+</html>

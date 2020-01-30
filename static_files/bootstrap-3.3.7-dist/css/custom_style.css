@@ -1,0 +1,905 @@
+.nav_font_style{
+
+font-style: italic;
+
+}
+
+.nav_second{
+
+height: 20px;
+font-size: 1.1rem;
+
+}
+
+
+
+.block-title.title1 h2 >span:before {
+    border-right: 20px solid transparent;
+    border-bottom: 37px solid #117b33 ;
+    content: "";
+    display: inline-block;
+    height: 0;
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 0;
+}
+
+.block-title h2 >span {
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 18px;
+    text-transform: uppercase;
+    line-height: 37px;
+    position: relative;
+    color: #fff;
+    background: #117b33 ;
+}
+
+
+
+
+.block-title h2 {
+    display: inline;
+    font-size: 16px;
+}
+
+.sw-best-seller-product.bestsale-block .block-title {
+    margin: -5px -19px 20px;
+}
+
+.block-title {
+    border-bottom: 3px solid #117b33 ;
+    position: relative;
+    
+}
+
+.card-body{
+border-top-right-radius: 25px;
+background-color: #303531; 
+
+}
+
+
+.card-body-live-bet{
+border-left: 2px solid #117b33;
+background-color: #303531; 
+
+}
+
+.card-radius{
+border-top-right-radius: 25px;
+background-color: #303531; 
+
+}
+
+.span-font-form-label{
+
+
+color: #fff;
+font-size: 1rem; 
+
+}
+
+.p-live-bet{
+
+color: #fff;
+padding:1%;
+
+}
+
+
+.label-padd{
+
+padding-left: 2%;
+
+}
+
+.body-bottom-span{
+
+border-bottom: 1px solid #000;
+
+
+}
+
+.form-cehck-label{
+
+padding-left: 0%;
+
+}
+
+.article-radius
+{
+
+   border-top-right-radius: 25px;
+}
+
+.sidecard-font{
+
+border-top: 1px solid #000;    font-size: .7rem;
+    
+}
+
+
+
+/*side nav css*/
+.soccer-table{   margin-left: 3%;
+    color:#117b33;
+    font-weight: bold;
+}
+
+.nav-second ul li{
+
+float: left;
+
+}
+
+
+.Centre-div-font{
+	border: 2px solid #303531;
+padding-top: 1%;
+color: #fff;
+    width: 100%;
+
+}
+
+.betway-boost{
+border-right: 1px solid #ccc;
+background-color: #000;
+
+}
+
+
+
+.betway-boost-time{
+
+font-size: 1.2rem;
+background-color: #191919;
+
+}
+
+.betway-boost-child{
+
+background-color: #303531;
+font-size: 1rem;
+
+}
+
+
+.soccer-child
+{
+
+
+	font-size:1rem;
+	color: #fff;
+}
+
+.soccer-child-border
+{
+
+
+	border:1px solid #000;
+}
+
+.betting-site-align{
+
+ text-align: -webkit-center;"
+}
+
+.beting-site-row{
+
+	
+	 margin-top: 2%;
+
+}
+
+.beting-site-text
+{
+
+	 color: #fff;
+	 font-size:1rem;
+}
+
+.span-showmore
+{
+
+	border-bottom: 1px solid #117b33;font-size: 1rem;color:#117b33;font-weight:bold;
+}
+
+.span-more-beting
+{
+
+	border-bottom: 1px solid #fff;float: right;font-size: 1rem;color: #fff;
+}
+
+footer{
+
+
+background-color: #111111;
+text-align: center;
+}
+
+footer h5{
+
+color: #fff;
+
+}
+
+footer ul li>a{
+
+color: #717171;
+font-size: 1rem;
+
+}
+footer ul li>a:hover{
+
+color: #117b33 ;
+
+}
+
+.side-nav ul li>a{
+
+color: #fff;
+
+
+}
+
+.side-nav ul li>a:hover{
+
+color: #117b33 ;
+
+
+}
+
+.side-nav-style-li{
+
+    padding-right: 4%;
+    padding-left: 4%;
+
+}
+
+
+.side-nav-style-li-span{
+
+
+    float: right;
+}
+
+.form-signin
+{
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    margin-top:18%;
+
+    background-color:#000;
+        margin-bottom: 50%;
+    border: 1px solid #117b33;
+}
+
+#heading
+{
+    padding-bottom: 20px;
+}
+
+.test{
+ /* height:250px;*/
+  border: 2px solid;
+  border-image: linear-gradient(to left,rgba(78,137,176,1)  1%, rgba(115,192,85,1)  100%) 100% 0 100% 0/2px 0 2px 0;
+  /*padding-top:50px;*/
+  margin-bottom:5%;
+  border-top-right-radius:50%;
+  border-top-left-radius:50%;
+}
+
+.class-login-form
+{
+    margin-top: 8%;
+    margin-bottom: 10%;
+width: 60%;
+margin-left: 20%
+
+
+}
+
+
+.class-register-form
+{
+    margin-top: 8%;
+    margin-bottom: 10%;
+width: 60%;
+margin-left: 15%
+
+
+}
+
+.from-styling{
+
+    border: 1px solid #117b33;
+    padding: 10%;
+
+}
+
+
+.login-nav{
+
+
+    /*font-style: italic;transform: skew(-18.5deg);*/
+    color: #61362f38;
+    font-style: italic;
+    background-color: #117b33;
+}
+
+
+.mybets-tabs{
+
+
+    font-style: normal;transform: skew(29.5deg);
+    color: #61362f38;
+    font-style: normal;
+    background-color: #117b33;
+
+
+
+}
+
+.register-head1{
+
+  
+     margin-left:10%;color: #fff;
+
+
+}
+
+.register-head2{
+
+
+   float: right;margin-right: 15%;color: #fff;
+   
+}
+
+.register-h2
+{
+    text-align: center;
+    font-weight: bolder;
+    color: #117b33;
+}
+
+
+
+.astrodivider {
+  margin:4px auto;
+  width:400px; 
+  max-width: 100%;
+  position:relative;
+}
+
+.astrodividermask { 
+    overflow:hidden; height:20px; 
+}
+
+.astrodividermask:after { 
+      content:''; 
+      display:block; margin:-25px auto 0;
+      width:100%; height:25px;  
+        border-radius:125px / 12px;
+       box-shadow:0 0 8px #049372;
+}
+.astrodivider span {
+    width:50px; height:50px; 
+    position:absolute; 
+    bottom:100%; margin-bottom:-25px;
+    left:50%; margin-left:-25px;
+    border-radius:100%;
+   box-shadow:0 2px 4px #4fb39c;
+    background:#fff;
+}
+.astrodivider i {
+    position:absolute;
+    top:4px; bottom:4px;
+    left:4px; right:4px;
+    border-radius:100%;
+    border:1px dashed #68beaa;
+    text-align:center;
+    line-height:40px;
+    font-style:normal;
+     color:#049372;
+}
+
+.register-label
+{
+
+    color: #fff;margin-top: 3%;
+    text-align: center;
+}
+
+.header-2{
+       line-height: 3;
+    text-align: center;
+    color: #fff;
+    background-color: #117b33;
+}
+
+.header-2 a{
+
+  
+    color: #fff;
+    
+}
+
+.header-2-contant{
+
+  
+    border-right: 1px solid #000;
+    
+}
+
+.all-livebets-navs-li-tabs {
+
+  color: #fff;
+
+}
+
+
+
+.all-livebets-navs
+{
+
+  color: #fff;
+ 
+}
+
+
+
+.all-livebets-navs li {
+
+  float: left;
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 0.19;
+
+}
+
+.all-livebets-navs li>a{
+
+  float: left;
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 0.19;
+  color: #fff;
+
+}
+
+.all-livebets-navs li>a:hover{
+
+  float: left;
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 0.19;
+  color: #fff;
+
+}
+
+.all-livebets-navs2
+{
+
+  color: #fff;
+  
+ 
+}
+
+
+
+.all-livebets-navs2 li {
+
+ width: auto;
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 1;
+
+
+}
+
+.all-livebets-navs2 li>a{
+
+ 
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 1;
+  color: #fff;
+  padding-right: 7px;
+    padding-left: 7px;
+
+
+}
+
+.all-livebets-navs2 li>a:hover{
+
+
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 1;
+  color: #fff;
+ 
+
+}
+
+
+.bets-slip-navs
+{
+
+  color: #fff;
+ 
+}
+
+
+
+.bets-slip-navs li {
+
+ width: 33%;
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 0.19;
+      margin: 1% 0%;
+    padding: 1% 3%;
+    text-align: center;
+
+}
+
+.bets-slip-navs li>a{
+
+  
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 0.19;
+  color: #fff;
+
+}
+
+.bets-slip-navs li>a:hover{
+
+ 
+  text-decoration: none;
+   background-color: #117b33;
+  height: 100%;
+  display: inline-block;
+  line-height: 2.5;
+  font-style: normal;
+  line-height: 0.19;
+  color: #fff;
+
+}
+
+
+
+
+.all-live-tab-stat-child{
+
+padding: 1%;
+width: 100%;
+text-align: center;
+background-color: #0a5222;
+    margin-left: inherit;
+}
+
+
+.mybet-tab-stat-child{
+
+
+width: 100%;
+text-align: center;
+background-color: #303531;
+    margin-left: inherit;
+}
+
+
+.livebet-soccer-checkbox-header{
+
+color: #fff;
+text-align: center;
+
+}
+
+.livebet-soccer-checkbox-header-form{
+
+border-bottom: 1px solid #000;
+background-color: #0a5222;
+}
+
+.row-color{
+
+  color: #fff;
+  border-bottom: 2px solid #000;
+}
+
+.soccer-row{
+
+  width: 100%;
+    margin: inherit;
+    text-align: center;
+
+}
+
+.livebet-soccer-span-row{
+
+margin: 1%;
+font-size:1rem;
+}
+.livebet-soccer-span-row2{
+
+margin-left: 3%;
+font-size:1rem;
+background-color: #117b33;
+padding-left:1%;
+padding-right:1%;
+border:1px solid #117b33;
+border-top-right-radius:38%;
+border-top-left-radius:38%;
+border-bottom-right-radius:38%;
+border-bottom-left-radius :38%;
+}
+
+.livebet-header-esports{
+background color: #117b33;
+color: #fff;
+border-top-left-radius: 25px;
+border-top-right-radius: 25px;
+
+
+}
+.livebet-header-esports-bottom{
+background color: #117b33;
+color: #fff;
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+
+
+}
+
+
+.livebet-soccer-span-row3{
+
+margin-left: 1%;
+font-size:1rem;
+background-color: #117b33;
+padding-left:1%;
+padding-right:1%;
+border:1px solid #117b33;
+border-top-right-radius:38%;
+border-top-left-radius:38%;
+border-bottom-right-radius:38%;
+border-bottom-left-radius :38%;
+}
+
+.live-bet-6hours-bottom{
+
+border-bottom-left-radius: 25px;
+border-bottom-right-radius: 25px;
+
+}
+
+.containor-color{
+
+background-color: #303531;
+
+}
+
+.p-live-bat-more-info
+{
+   margin-left: 1%;
+    margin-top: 2%;
+  color: #fff;
+}
+
+
+.my-bet-widget-nav ul li{
+color: #fff;
+float: left;
+
+text-decoration: underline;
+display: inline-block;
+font-style: italic;
+
+
+}
+
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 100%;
+  width: auto;
+  padding: 4px 6px;
+  margin-top: -22px;
+  margin-left: -48%;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+ /* position: absolute;*/
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.bet-slip-inner{
+
+width:100%;
+
+border:1px solid #000;
+background-color:#117b33;
+
+}
+
+.line-content{
+
+  color: #fff;
+}
+
+.current {
+  color: green;
+}
+
+#pagin{
+  display: inline-block;
+  color:#fff;
+  margin-top: 1%;
+  width: 100%;
+background-color: #117b33;
+
+text-align: center; 
+}
+
+#pagin li {
+  margin-left: auto;
+  display: inline-block;
+  color:#fff;
+  margin-top: 1%;
+  margin-bottom: 1%;
+
+}
+
+#pagin li a{
+  display: inline-block;
+  color:#fff;
+
+}
+
+.preve {
+  cursor: pointer;
+   /* background-color:#93d136;*/
+  color:#FFF;
+  padding:0px 15px 0px 15px;
+ color: white;/*border: 1px solid #87ad4d;border-radius: 16px;*/
+}
+
+.nextt {
+  cursor: pointer;
+  /*  background-color:#93d136;*/
+  padding:0px 15px 0px 15px;
+ 
+  color: white;/*border: 1px solid #87ad4d;border-radius: 16px;*/
+}
+
+.last{
+  cursor:pointer;
+  margin-left:5px;
+}
+
+.first{
+  cursor:pointer;
+  margin-right:5px;
+}
+
+
+

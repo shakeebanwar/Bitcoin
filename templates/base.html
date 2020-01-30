@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Documents</title>
+    <link rel="stylesheet" href="{% static 'style1.css' %}">
+    <link rel='stylesheet' href="{% static 'bootstrap-3.3.7-dist\css\bootstrap.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/responsive.css' %}">
+    <link id="layoutstyle" rel="stylesheet" href="{% static 'assets/color/theme.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap-3.3.7-dist\css\bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="{% static 'bootstrap-3.4.1-dist\js\bootstrap.min.js' %}"></script>
+<style>
+@media screen and (max-height: 767px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  footer{text-align: center;}
+  .container{width: 80%;max-width: 80%;}
+}
+.btn_style{margin-top: 3%;margin-left: 10%;}
+</style>
+</head>
+<body>
+    
+{% block content %}
+{% endblock content %}
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+{% comment %} <script  src="{% static 'js/script.js' %}"></script> {% endcomment %}
+{% comment %} <script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script  src="{% static 'js/index.js' %}"></script> {% endcomment %}
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+{% block js%}  {% endblock %}
+</body>
+</html>
